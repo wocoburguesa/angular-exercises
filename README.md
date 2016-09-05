@@ -2,4 +2,4 @@
 
 Just install by running `$npm install`.
 
-Run with `$npm start`
+Start the server with `$npm start` and check out the live app in `localhost:8000` in your browser.
