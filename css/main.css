@@ -1,0 +1,39 @@
+.page-transition {
+    transition: transform 1s ease;
+    transform: translate3d(0, 0, 0);
+}
+
+.page-transition.ng-enter {
+    transform: translate3d(100%, 0, 0);
+}
+.page-transition.ng-enter-active {
+    transform: translate3d(0, 0, 0);
+}
+.page-transition.ng-leave,
+.page-transition.ng-leave-active {
+    display: none;
+}
+
+/* TODO: add backwards transition animations, this would
+   also require some flags in the controllers */
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    cursor: pointer;
+}
+
+table, th, td {
+    padding: 5px 20px;
+    border: 1px solid #000;
+}
+
+th.sort-active {
+    background-color: #aaffaa;
+}
+
+.index li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+<h3>Click on any column header to sort by that field</h3>
+<table>
+  <tr>
+    <th ng-class="{'sort-active': $ctrl.currentSort === 'name'}"
+        ng-click="$ctrl.sort('name')">Name</td>
+<th ng-class="{'sort-active': $ctrl.currentSort === 'lastName'}"
+    ng-click="$ctrl.sort('lastName')">Last Name</td>
+<th ng-class="{'sort-active': $ctrl.currentSort === 'id'}"
+    ng-click="$ctrl.sort('id')">ID</td>
+</tr>
+<tr ng-repeat="person in $ctrl.peopleList">
+  <td>{{ person.name }}</td>
+  <td>{{ person.lastName }}</td>
+  <td>{{ person.id }}</td>
+</tr>
+</table>

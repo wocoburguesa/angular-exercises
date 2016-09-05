@@ -1,0 +1,6 @@
+<label>Type something here:</label>
+<input type="text" ng-model="$ctrl.syncedInput"
+       ng-change="$ctrl.sync()"/>
+<p>The current synced value is: {{ $ctrl.syncedInput }}</p>
+<a ui-sref="input-two">Go to the synced controller's page</a>
+<a ui-sref="input-two">Go back home</a>

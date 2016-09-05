@@ -1,0 +1,67 @@
+<h3>Home</h3>
+<ul class="index">
+  <li>
+    <a ui-sref="triple-view">Triple View: </a>
+    <span>This is task #1, the following are views loaded dynamically through state parameters:</span>
+    <ul>
+      <li>
+        <a ui-sref="triple-view({ target: 'admin' })">/triple-view/admin:</a>
+        <span>This content is loaded when the param is 'admin',
+          it also has an optional second parameter that populates an additional view.
+          In this simple example it just reflects whatever the param is, for example visiting
+          <a ui-sref="triple-view({ target: 'admin/additional', })">/triple-view/admin/additional</a>
+          will show "additional"</span>
+      </li>
+      <li>
+        <a ui-sref="triple-view({ target: 'secret' })">/triple-view/secret:</a>
+        <span>This content is loaded when the param is 'secret'</span>
+      </li>
+      <li>
+        <a ui-sref="triple-view({ target: 'anythingelse' })">/triple-view/anything:</a>
+        <span>This content is loaded when the param is anything other than the other two</span>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a ui-sref="input-one">Communication between controllers:</a>
+    <span>This is task #2, the view for Input One has a link to the view for Input Two.
+      By filling out the input in Input One, a service will keep track of the data.
+      When Input Two gets loaded it uses the same service to get the data
+      set in Input One.</span>
+  </li>
+
+  <li>
+    <span>Task #3 is having page transition animations, which can be observed when
+      navigating to any of the links</span>
+  </li>
+
+  <li>
+    <a ui-sref="sortable-list">Sortable list:</a>
+    <span>This is task #4, an array of 50 items with random values gets generated
+      and it is sortable by fields when clicking on the column headers.</span>
+  </li>
+
+  <li>
+    <a ui-sref="inputs-group">Formatted inputs:</a>
+    <span>These are tasks #5 and #6. Directives that only allow numbers and
+      format the input as a phone number and as an amount of money respectively</span>
+  </li>
+
+  <li>
+    <a ui-sref="inputs-sum">Sum of three inputs:</a>
+    <span>This is task #7. The sum of inputs 1 through 3 is displayed in input 4.
+      When input 4 gets updated the difference is distributed in a weighted
+      manner across the other 3 inputs.</span>
+  </li>
+
+  <li>
+    <a ui-sref="inputs-max-char">Three inputs with max of 5 chars each:</a>
+    <span>This is task #8. A directive that groups three inputs and switches
+      focus between them as the maximum number of chars is reached.</span>
+  </li>
+
+  <li>
+    <span>Task #9 is loading the app's resources using require.js. It is also done</span>
+  </li>
+</ul>
